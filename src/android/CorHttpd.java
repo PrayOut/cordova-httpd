@@ -124,9 +124,9 @@ public class CorHttpd extends CordovaPlugin {
 					delayCallback.error( errmsg );
 				} else {
                     if (localhost_only) {
-                        url = "http://127.0.0.1:" + port;
+                        url = "https://127.0.0.1:" + port;
                     } else {
-                        url = "http://" + __getLocalIpAddress() + ":" + port;
+                        url = "https://" + __getLocalIpAddress() + ":" + port;
                     }
 	                delayCallback.success( url );
 				}
